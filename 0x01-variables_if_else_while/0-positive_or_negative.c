@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
+/**
  * main - main block
  * Discription: This program assigns a random number each time it's executed
  * and when:
