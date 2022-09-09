@@ -4,11 +4,11 @@
 
 /*
  * main - main block
- * Discription: This prpgram will assign a random number to variable "n" each time it's executed
- * and when; 
+ * Discription: This prpgram will assign a random number each time it's executed
+ * and when:
  * n > 0 is positive
  * n = 0 is zero
- * n < 0 is negative 
+ * n < 0 is negative
  */
 int main(void)
 {
