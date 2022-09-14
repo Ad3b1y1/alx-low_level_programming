@@ -7,12 +7,12 @@
 void print_alphatbet_x10(void)
 {
 int i, j;
-for (i = 0; i <= 9; i++)
+for (j = 0; j <= 9; j++)
 {
-for (j = 97: j <= 122; j++)
+for (i = 'a'; i <= 'z'; i++)
 
 {
-_putchar(j);
+_putchar(i);
 }
 _putchar('\n');
 }
