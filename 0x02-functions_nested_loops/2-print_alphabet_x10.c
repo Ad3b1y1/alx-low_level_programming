@@ -4,7 +4,7 @@
  *
  * Return: 0
  */
-void print_alphatbet_x10(void)
+void print_alphabet_x10(void)
 {
 int i, j;
 for (j = 0; j <= 9; j++)
