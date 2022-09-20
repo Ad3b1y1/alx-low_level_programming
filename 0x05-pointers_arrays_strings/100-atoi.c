@@ -7,29 +7,29 @@
 */
 int _atoi(char *s)
 {
-unsigned int count = 0, size = 0, oi = 0, pn = 1, m = 1, i;
+int i;
+int h, p;
 
-while (*(s + count) != '\0')
+h = 0;
+p = -1;
+for (i = 0; s[i] != '\0'; i++)
 {
-if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
+if (s[i] == '-')
+p *= -1;
+
+if (s[i] > 47 && s[i] < 58)
+{
+if (h < 0)
+h = (h * 10) - (s[i] - '0');
+else
+h = (s[i] - '0') * -1;
+
+if (s[i + 1] < 48 || s[i + 1] > 57)
 break;
-
-if (*(s + count) == '-')
-pn *= -1;
-
-if ((*(s + count) >= '0') && (*(s + count) <= '9'))
-{
-if (size > 0)
-m *= 10;
-size++;
 }
-count++;
 }
+if (p < 0)
+h *= -1;
 
-for (i = count - size; i < count; i++)
-{
-oi = oi + ((*(s + i) - 48) * m);
-m /= 10;
-}
-return (oi * pn);
+return (h);
 }
