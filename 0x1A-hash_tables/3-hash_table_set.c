@@ -1,4 +1,3 @@
-(47 sloc)  1.06 KB
 #include "hash_tables.h"
 
 /**
